@@ -6,8 +6,19 @@ body {
 
 main {
   flex: 1 0 auto;
+  background: url('/img/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#banner {
-  background-image: url("../img/hero.jpg");
+.hoverable {
+  opacity: 0.5;
+}
+
+.hoverable:hover {
+  opacity: 1.0;
+}
+
+footer h6 {
+  text-align: center;
 }

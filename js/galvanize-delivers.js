@@ -1,5 +1,12 @@
 "use strict";
 
+$('.hoverable').click((e) => {
+  
+
+
+
+});
+
 let cart = []
 
 //  add to cart
