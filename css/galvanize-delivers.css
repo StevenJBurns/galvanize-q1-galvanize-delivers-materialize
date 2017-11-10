@@ -11,14 +11,18 @@ main {
   background-size: cover;
 }
 
+#banner {
+
+}
+
 .hoverable {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .hoverable:hover {
-  opacity: 1.0;
+  opacity: 1.00;
 }
 
-footer h6 {
-  text-align: center;
+.col {
+  /*margin: : 4px;*/
 }
