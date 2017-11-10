@@ -3,31 +3,205 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Galvanize Delivers &bull;; Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="css/galvanize-delivers.css" />
-    <link rel=icon href="">
+    <title>Galvanize Delivers &bull; Home</title>
+    <link rel=icon href="img/favicon-galvanize.ico">
+    <link rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" />
+    <link rel="stylesheet" media="screen,projection" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" media="screen,projection" href="css/galvanize-delivers.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://use.fontawesome.com/fb07e26f3f.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/galvanize-delivers.js"></script>
+    <script src="js/galvanize-delivers.js" defer></script>
   </head>
   <body>
-    <header class="blue darken-4">
-      <h2>Galvanize Delivers</h2>
-      <a class="">Order Delivery</a>
+    <header class="">
+      <nav>
+        <div class="nav-wrapper indigo darken-4">
+          <a href="/" class="brand-logo yellow-text accent-2 left"><i class="fa fa-fax"></i>Galvanize Delivers</a>
+          <ul id="nav-mobile" class="right">
+            <li><a class="right-align yellow-text accent-2" href="order.html">Order</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <nav>
-      <h4>Galvanize Delivers</h4>
-      <h6>Fine Dining, Delivered</h6>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="order.html">Order</a></li>
-      </ul>
-    </nav>
-    <footer>
-      <h6>&copy;2017 Galvanize Delivers</h6>
+    <main>
+      <div class="row">
+        <div class="col s12">
+          <h4 id="menuHeader">Menu<span id="orderHeader">Order</span></h4>
+        </div>
+        <ul id="slide-out" class="side-nav">
+          <li>
+            <div class="user-view"><div class="background"></div></div>
+          </li>
+          <li><a href="#!"><i class="material-icons">shopping_basket</i></a></li>
+          <div class="col s5">
+            <table class = "striped" id = "orders">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th></th>
+                  <th></th>
+                  <th><span id ="priceThis">Price</span></th>
+                </tr>
+              </thead>
+              <tbody id = "cartContents">   <!-- Cart click handlers -->
+              </tbody>
+            </table>
+          </div>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="img/order1.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3 id = "slide1">Enjoy the atmosphere!</h3>
+              </div>
+            </li>
+            <li>
+              <img src="img/order2.jpg"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>Fresh Ingredients</h3>
+              </div>
+            </li>
+            <li>
+              <img src="img/order3.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>Order online with this fancy website!</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+      <div class="col s6">6-columns (one-half)
+        <div class="row">
+              <div class="col s12 m7">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/burger.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p class = "foodName">Royale with Cheese</p>
+                    <p class = "price">$8.99</p>
+                  </div>
+                  <button>Add to Cart</button>
+                  <div class="card-action">
+                  </div>
+                </div>
+              </div>
+            </span>
+            </div>
+            <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/ribs.jpg">
+          </div>
+          <div class="card-content">
+            <p class = "foodName">Smoked Swine</p>
+            <p class = "price">$14.99</p>
+          </div>
+            <button>Add to Cart</button>
+          <div class="card-action">
+          </div>
+        </div>
+      </div>
+    </div> <br>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/pizza.jpg">
+          </div>
+          <div class="card-content">
+            <p class = "foodName">Arugula Pie</p>
+            <p class = "price">$11.99</p>
+          </div>
+            <button>Add to Cart</button>
+          <div class="card-action">
+          </div>
+        </div>
+      </div>
+    </div>
+              <div class="row">
+                <div class="col s12 m7">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/ice_cream.jpg">
+                    </div>
+                    <div class="card-content">
+                      <p class = "foodName">Ice Cream Biscut</p>
+                      <p class = "price" >$7.99</p>
+                    </div>
+                    <button>Add to Cart</button>
+                    <div class="card-action"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s5">
+              <table class = "striped" id = "orders">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th></th>
+                    <th id="quant">quantity</th>
+                    <th><span id ="priceThis">Item Price</span></th>
+                  </tr>
+                </thead>
+                <tbody id="cartContents"> <!-- Cart click handlers -->
+                </tbody>
+              </table>
+
+              <table class = "table2">
+                <tbody>
+                  <tr>
+                    <td>Subtotal</td>
+                    <td id = "subField">$</td>
+                  </tr>
+                  <tr>
+                    <td>Tax</td>
+                    <td id = "taxField">$</td>
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td id = "totalField">$</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <form method="link" action = "final.html" name="english_registration_form" id="english_registration_form">
+              <i class="material-icons prefix">account_circle</i>
+              <input type="text" id="name" name="name" aria-describedby="name-format" placeholder="Name" required> <span class="error"><p id="name_error"></p></span>
+              <i class="material-icons prefix">call</i>
+              <input type="text" id="telephone" name="telephone" placeholder="telephone" required> <span class="error"><p id="telephone_error"></p></span>
+              <i class="material-icons prefix">domain</i>
+              <input type="text" id="telephone" name="telephone" placeholder="Telephone" required> <span class="error" required><p id="address_error"></p></span>
+              <button id = "orderButton">Complete Order</button>
+            </form>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer indigo darken-4">
+      <div class="container row valign-wrapper">
+        <div class="col s4">
+          <a class="left" href="/">Home</a>
+        </div>
+        <div class="col s4 center-align">
+          <h6>&copy;2017 Galvanize Delivers</h6>
+        </div>
+        <div class="col s4">
+          <a class="right" href="order.html">Order</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
