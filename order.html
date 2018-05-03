@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Galvanize Delivers &bull; Home</title>
+    <title>Galvanize Delivers &bull; Order</title>
     <link rel=icon href="img/favicon-galvanize.ico">
     <link rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" />
     <link rel="stylesheet" media="screen,projection" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" media="screen,projection" href="css/galvanize-delivers.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://use.fontawesome.com/03af6b9577.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/galvanize-delivers.js" defer></script>
   </head>
@@ -46,135 +47,172 @@
       </ul>
     </header>
     <main>
-      <div class="row">
-        <div class="slider">
-          <ul class="slides">
-            <li>
-              <img src="img/order1.jpg">
-              <div class="caption right-align">
-                <h3>Enjoy the atmosphere!</h3>
-              </div>
-            </li>
-            <li>
-              <img src="img/order2.jpg">
-              <div class="caption left-align">
-                <h3>Fresh Ingredients</h3>
-              </div>
-            </li>
-            <li>
-              <img src="img/order3.jpg">
-              <div class="caption center-align">
-                <h3>Order online with this fancy website!</h3>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <hr class="yellow-text text-lighten-2" />
-        <h4 class="center-align yellow-text text-lighten-2">Place Your Order Here!</h4>
-        <div class="col s6">
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/burger.jpg">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/order1.jpg">
+            <div class="caption right-align">
+              <h3>Enjoy the atmosphere!</h3>
+            </div>
+          </li>
+          <li>
+            <img src="img/order2.jpg">
+            <div class="caption left-align">
+              <h3>Fresh Ingredients</h3>
+            </div>
+          </li>
+          <li>
+            <img src="img/order3.jpg">
+            <div class="caption center-align">
+              <h3>Order online with this fancy website!</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <hr />
+      <!-- <div class="divider yellow lighten-2"></div> -->
+      <h4 class="center-align yellow-text text-lighten-2">Place Your Order Here!</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m7">
+            <div class="row">
+              <div class="col s6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/burger.jpg">
+                  </div>
+                  <div class="card-content indigo accent-1">
+                    <h6 class="center-align truncate">Royale with Cheese</h6>
+                    <p class="center-align">$8.99</p>
+                  </div>
+                  <div class="center-align indigo accent-1">
+                    <button class="btn waves-effect waves-light yellow darken-2">Add to Cart</button>
+                  </div>
                 </div>
-                <div class="card-content">
-                  <p>Royale with Cheese</p>
-                  <p>$8.99</p>
+              </div>
+              <div class="col s6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/ribs.jpg">
+                  </div>
+                  <div class="card-content indigo accent-1">
+                    <h6 class="center-align">Smoked Swine</h6>
+                    <p class="center-align">$14.99</p>
+                  </div>
+                  <div class="center-align indigo accent-1">
+                    <button class="btn waves-effect waves-light yellow darken-2">Add to Cart</button>
+                  </div>
                 </div>
-                <button>Add to Cart</button>
-                <div class="card-action"></div>
+              </div>
+              <div class="col s6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/pizza.jpg">
+                  </div>
+                  <div class="card-content indigo accent-1">
+                    <h6 class="center-align">Arugula Pie</h6>
+                    <p class="center-align">$11.99</p>
+                  </div>
+                  <div class="center-align indigo accent-1">
+                    <button class="btn waves-effect waves-light yellow darken-2">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col s6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/ice_cream.jpg">
+                  </div>
+                  <div class="card-content indigo accent-1">
+                    <h6 class="center-align">Ice Cream Biscuit</h6>
+                    <p class="center-align">$7.99</p>
+                  </div>
+                  <div class="center-align indigo accent-1">
+                    <button class="btn waves-effect waves-light yellow darken-2">Add to Cart</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/ribs.jpg">
+          <div class="col s12 m5">
+            <h5 class="yellow-text text-lighten-2">Your Shopping Cart</h5>
+            <table id="orders">
+              <thead>
+                <tr>
+                  <td class="yellow-text text-lighten-2">Name</td>
+                  <td class="yellow-text text-lighten-2">Quantity</td>
+                  <td class="yellow-text text-lighten-2">Price</td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td class="yellow-text text-lighten-2">Sub Total:
+                    <div id="subtotal" class="yellow-text text-lighten-2"></div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td class="yellow-text text-lighten-2">Tax:
+                    <div id="tax" class="yellow-text text-lighten-2"></div>
+                  </td>
+                  <td></td>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="yellow-text text-lighten-2">Total:
+                      <div id="total" class="yellow-text text-lighten-2"></div>
+                    </td>
+                    <td></td>
+                  </tr>
+              </tfoot>
+            </table>
+            <!-- form -->
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="name" type="text" class="validate yellow-text text-lighten-2" required="">
+                    <label for="name" class="left-align yellow-text text-lighten-2"><i class="fa fa-user-o fa-2x" aria-hidden="true"></i>Name</label>
+                  </div>
                 </div>
-                <div class="card-content">
-                  <p>Smoked Swine</p>
-                  <p>$14.99</p>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="telephone" type="tel" class="validate yellow-text text-lighten-2" required>
+                    <label for="telephone" class="left-align yellow-text text-lighten-2"><i class="fa fa-phone fa-2x" aria-hidden="true"></i>Telephone</label>
+                  </div>
                 </div>
-                <button>Add to Cart</button>
-                <div class="card-action"></div>
-              </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate yellow-text text-lighten-2" required>
+                    <label for="email" class="left-align yellow-text text-lighten-2"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="address" type="text" class="validate yellow-text text-lighten-2" required>
+                    <input id="address" type="text" class="validate yellow-text text-lighten-2" required>
+                    <label for="address" class="left-align yellow-text text-lighten-2"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i>Address</label>
+                  </div>
+                </div>
+                <div class="center-align">
+                  <a id="submitBtn" type="submit" data-target="modal1" class=" btn modal-trigger waves-effect waves-light yellow darken-2"><i class="fa fa-paper-plane-o fa-2x" aria-hidden="true"></i> Submit your order</a>
+                </div>
+              </form>
             </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/pizza.jpg">
-                </div>
-                <div class="card-content">
-                  <p>Arugula Pie</p>
-                  <p>$11.99</p>
-                </div>
-                <button>Add to Cart</button>
-                <div class="card-action"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m7">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/ice_cream.jpg">
-                </div>
-                <div class="card-content">
-                  <p class="foodName">Ice Cream Biscut</p>
-                  <p class="price">$7.99</p>
-                </div>
-                <button>Add to Cart</button>
-                <div class="card-action"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s5">
-          <table id="orderDetails" class="striped">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th></th>
-                <th id="quant">quantity</th>
-                <th><span id="priceThis">Item Price</span></th>
-              </tr>
-            </thead>
-            <tbody id="cartContents"><!-- Cart click handlers --></tbody>
-          </table>
-          <table id="orderSummary" class="">
-            <tbody>
-              <tr>
-                <td>Subtotal</td>
-                <td id="subField">$</td>
-              </tr>
-              <tr>
-                <td>Tax</td>
-                <td id="taxField">$</td>
-              </tr>
-              <tr>
-                <td>Total</td>
-                <td id="totalField">$</td>
-              </tr>
-            </tbody>
-          </table>
-          <form method="link" action="final.html" name="english_registration_form" id="english_registration_form">
-            <i class="material-icons prefix">account_circle</i>
-            <input type="text" id="name" name="name" aria-describedby="name-format" placeholder="Name" required> <span class="error"><p id="name_error"></p></span>
-            <i class="material-icons prefix">call</i>
-            <input type="text" id="telephone" name="telephone" placeholder="telephone" required> <span class="error"><p id="telephone_error"></p></span>
-            <i class="material-icons prefix">domain</i>
-            <input type="text" id="address" name="address" placeholder="Address" required><span class="error" required><p id="address_error"></p></span>
-            <button id = "orderButton">Complete Order</button>
-          </form>
-          <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal</p>
           </div>
         </div>
       </div>
